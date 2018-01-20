@@ -1,0 +1,59 @@
+.contact-form {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+.contact-form .item {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.contact-form .item.no-label {
+  padding-left: 220px;
+}
+.contact-form .item .label {
+  float: left;
+  padding: 5px;
+}
+.contact-form .item input[type=text],
+.contact-form .item input[type=email],
+.contact-form .item select,
+.contact-form .item textarea {
+  display: block;
+  margin-left: 200px;
+  width: 175px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.contact-form .item label:nth-child(2){
+  margin-left: 175px;
+  margin-right: 20px;
+  font-size: 13px;
+}
+.contact-form .item ::placeholder {
+  color: #ccc;
+}
+.contact-form .item textarea {
+  outline: none;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+.square_btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}

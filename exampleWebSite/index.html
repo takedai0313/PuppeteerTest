@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="ChromeHeadlessTestWebForm">
+  <meta property="og:type" content="website">
+  <title>ChromeHeadlessTestWebForm</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form class="contact-form" action="#" method="post">
+    <p>お客様の情報をご記載下さい。</p>
+    <p id="errorInfo"></p>
+    <div class="item">
+      <label class="label" for="name">名前</label>
+      <input id="name" type="text">
+    </div>
+    <div class="item" id="sexInput">
+      <label class="label" for="sex">性別</label>
+      <label><input name="sex" type="radio" value="male" id="test">男性</label>
+      <label><input name="sex" type="radio" value="female">女性</label>
+    </div>
+    <div class="item">
+      <label class="label" for="e-mail">メールアドレス</label>
+      <input id="email" type="email">
+    </div>
+    <div class="item">
+      <label class="label" for="e-mail">(確認用)メールアドレス</label>
+      <input id="confirmEmail" type="email">
+    </div>
+    <div class="item">
+      <label class="label" for="browser">好きなブラウザ</label>
+      <select id="browser">
+        <option value="IE">IE</option>
+        <option value="IE-Edge">IE-Edge</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Opera">Opera</option>
+      </select>
+    </div>
+    <div class="item">
+      <label class="label" for="message">メッセージ</label>
+      <textarea rows="4" id="message" placeholder="ご意見をお寄せ下さい。"></textarea>
+    </div>
+    <div class="item no-label" id="agreementInput">
+      <label><input type="checkbox" id="agreement">規約を確認しました</label>
+    </div>
+    <div class="item no-label">
+      <a href="#" class="square_btn" id="sendButton">送信する</a>
+    </div>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script> (window.jQuery || document .write('<script src="js/jquery-3.2.1.min.js"><\/script>')); </script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
